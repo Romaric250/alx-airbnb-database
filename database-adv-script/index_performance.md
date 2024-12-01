@@ -20,3 +20,5 @@ Based on typical query patterns:
 - **`Property` Table**:
   - `property_id`: Used in `JOIN` clauses with `Booking` and `Review`.
   - `location`: Used in location-based searches (`WHERE` clause).
+
+---
