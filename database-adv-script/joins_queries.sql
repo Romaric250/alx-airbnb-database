@@ -32,7 +32,7 @@ ON
     Property.property_id = Review.property_id;
 
 -- Query 3: FULL OUTER JOIN - Retrieve all users and all bookings, even if the user has no booking or a booking is not linked to a user
--- For databases that support FULL OUTER JOIN
+
 SELECT 
     User.user_id,
     User.first_name,
@@ -48,7 +48,7 @@ FULL OUTER JOIN
 ON 
     User.user_id = Booking.user_id;
 
--- Alternative Query 3 for MySQL (as FULL OUTER JOIN is not directly supported)
+
 -- Combine LEFT JOIN and RIGHT JOIN using UNION
 SELECT 
     User.user_id,
